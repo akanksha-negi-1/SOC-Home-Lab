@@ -6,7 +6,7 @@ This incident report documents a controlled SOC lab exercise conducted on a Wind
 
 Six security-relevant activities were intentionally simulated: PowerShell execution with `ExecutionPolicy Bypass`, Windows service creation, scheduled task creation, local user account creation, a failed Windows logon, and encoded PowerShell execution.
 
-Sysmon and Windows Security telemetry were collected by the Splunk Universal Forwarder and analyzed in Splunk Enterprise. Dedicated detections generated real-time alerts for each activity, which were then investigated using the corresponding Splunk events.
+Sysmon and Windows Event Log telemetry were collected by the Splunk Universal Forwarder and analyzed in Splunk Enterprise. Dedicated detections generated real-time alerts for each activity, which were then investigated using the corresponding Splunk events.
 
 The simulated activities were controlled tests and did not represent actual malicious activity or a real security incident.
 
@@ -98,7 +98,7 @@ The Splunk alerts remain configured for future testing and monitoring.
 
 ## Conclusion
 
-This SOC lab demonstrated an end-to-end detection and investigation workflow using Splunk Enterprise, Windows Security logs, and Sysmon.
+This SOC lab demonstrated an end-to-end detection and investigation workflow using Splunk Enterprise, Windows Event Logs, and Sysmon.
 
 Six security-relevant activities were simulated and successfully detected through dedicated Splunk alerts. Each alert was investigated using the underlying endpoint telemetry and mapped to relevant MITRE ATT&CK techniques where the available evidence supported the mapping.
 
