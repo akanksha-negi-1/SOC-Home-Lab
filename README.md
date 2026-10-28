@@ -1,6 +1,6 @@
 # SOC Home Lab
 
-An end-to-end Security Operations Center (SOC) home lab built using Splunk Enterprise, Sysmon, Windows Security telemetry, and a Windows endpoint.
+An end-to-end Security Operations Center (SOC) home lab built using Splunk Enterprise, Sysmon, Windows Event Logs, and a Windows endpoint.
 
 ## Project Overview
 
@@ -46,7 +46,7 @@ SOC Dashboard
 - Splunk Universal Forwarder
 - Windows 10
 - Sysmon
-- Windows Security Event Logs
+- Windows Event Logs
 - VirtualBox
 - MITRE ATT&CK
 
@@ -120,6 +120,6 @@ The dashboard is available in [`06-Dashboard/`](06-Dashboard/).
 
 ## Conclusion
 
-This project demonstrates an end-to-end SOC detection and investigation workflow using Splunk Enterprise, Windows Security logs, and Sysmon.
+This project demonstrates an end-to-end SOC detection and investigation workflow using Splunk Enterprise, Windows Event Logs, and Sysmon.
 
 The lab provided practical experience with security monitoring, detection engineering, alert investigation, event analysis, MITRE ATT&CK mapping, and security documentation in a controlled environment.
