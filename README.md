@@ -1,6 +1,6 @@
 # SOC Home Lab
 
-An end-to-end Security Operations Center (SOC) home lab built using Splunk Enterprise, Sysmon, Windows Event Logs, and a Windows endpoint.
+An end-to-end Security Operations Center (SOC) home lab built using Splunk Enterprise, Splunk Universal Forwarder, Windows Event Logs, and Sysmon.
 
 ## Overview
 
