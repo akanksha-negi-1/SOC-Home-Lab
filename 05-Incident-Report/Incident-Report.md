@@ -4,7 +4,7 @@
 
 This incident report documents a controlled SOC lab exercise conducted on a Windows endpoint monitored by Splunk Enterprise.
 
-Six security-relevant activities were intentionally simulated: PowerShell execution with `ExecutionPolicy Bypass`, Windows service creation, scheduled task creation, local user account creation, a failed Windows logon, and encoded PowerShell execution.
+Six security-relevant activities were intentionally simulated: PowerShell execution with `-ExecutionPolicy Bypass`, Windows service creation, scheduled task creation, local user account creation, a failed Windows logon, and encoded PowerShell execution.
 
 Sysmon and Windows Event Log telemetry were collected by the Splunk Universal Forwarder and analyzed in Splunk Enterprise. Dedicated detections generated real-time alerts for each activity, which were then investigated using the corresponding Splunk events.
 
@@ -76,9 +76,7 @@ The Splunk alerts remain configured for future testing and monitoring.
 
 ---
 
-## Lessons Learned & Limitations
-
-### Lessons Learned
+## Lessons Learned
 
 - Security telemetry must be verified before building detections around it.
 - Detection rules should use specific event fields and conditions rather than relying only on broad event searches.
@@ -87,7 +85,9 @@ The Splunk alerts remain configured for future testing and monitoring.
 - MITRE ATT&CK mapping should reflect what the available evidence actually supports rather than forcing a technique onto every detection.
 - Controlled testing helps validate the complete workflow from activity generation through detection, alerting, investigation, and reporting.
 
-### Limitations
+---
+
+## Limitations
 
 - The lab uses a single Windows endpoint and does not represent a production enterprise environment.
 - The simulated activities were intentionally generated and therefore do not reproduce the complexity of real attacks.
@@ -98,7 +98,7 @@ The Splunk alerts remain configured for future testing and monitoring.
 
 ## Conclusion
 
-This SOC lab demonstrated an end-to-end detection and investigation workflow using Splunk Enterprise, Windows Event Logs, and Sysmon.
+This SOC lab demonstrated an end-to-end detection and investigation workflow using Splunk Enterprise, Splunk Universal Forwarder, Windows Event Logs, and Sysmon.
 
 Six security-relevant activities were simulated and successfully detected through dedicated Splunk alerts. Each alert was investigated using the underlying endpoint telemetry and mapped to relevant MITRE ATT&CK techniques where the available evidence supported the mapping.
 
