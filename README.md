@@ -101,23 +101,8 @@ The dashboard includes:
 
 The dashboard is available in [`06-Dashboard/`](06-Dashboard/).
 
-## Key Learnings
-
-- Security telemetry should be verified before building detections around it.
-- Detection rules should use specific event fields and conditions.
-- Alerts must be investigated using the underlying endpoint events.
-- MITRE ATT&CK mappings should reflect what the available evidence supports.
-- Controlled testing helps validate the complete detection and investigation workflow.
-
-## Limitations
-
-- The lab uses a single Windows endpoint and does not represent a production enterprise environment.
-- Simulated activities do not reproduce the complexity of real attacks.
-- Some Windows telemetry was available locally but was not ingested into Splunk.
-- The failed-logon test generated a single event and therefore could not establish a true brute-force pattern.
-
 ## Conclusion
 
-This project demonstrates an end-to-end SOC detection and investigation workflow using Splunk Enterprise, Windows Event Logs, and Sysmon.
+This project demonstrates an end-to-end SOC detection and investigation workflow using Splunk Enterprise, Splunk Universal Forwarder, Windows Event Logs, and Sysmon.
 
 The lab provided practical experience with security monitoring, detection engineering, alert investigation, event analysis, MITRE ATT&CK mapping, and security documentation in a controlled environment.
