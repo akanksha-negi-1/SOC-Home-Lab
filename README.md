@@ -2,13 +2,13 @@
 
 An end-to-end Security Operations Center (SOC) home lab built using Splunk Enterprise, Sysmon, Windows Event Logs, and a Windows endpoint.
 
-## Project Overview
+## Overview
 
 This project demonstrates a complete SOC detection and investigation workflow in a controlled lab environment.
 
 Security-relevant activities were intentionally simulated on a Windows endpoint and monitored through Splunk Enterprise. The resulting telemetry was used to build detections, generate real-time alerts, investigate events, map activity to MITRE ATT&CK, and document the results.
 
-## Objective
+## Objectives
 
 - Build a functional SOC monitoring environment.
 - Collect Windows and Sysmon security telemetry.
