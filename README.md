@@ -44,10 +44,8 @@ SOC Dashboard
 
 - Splunk Enterprise
 - Splunk Universal Forwarder
-- Windows 10
-- Sysmon
 - Windows Event Logs
-- VirtualBox
+- Sysmon
 - MITRE ATT&CK
 
 ## Detections Implemented
